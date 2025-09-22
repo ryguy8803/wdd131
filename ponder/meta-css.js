@@ -17,7 +17,7 @@ const two = '2';
 let result = one * two;
 console.log(result)
 
-
+let student = "John";
 let course = "CSE131"; //global scope
 if (true) {
     let student = "John";
@@ -27,3 +27,11 @@ if (true) {
 console.log(course); //works fine, course is global
 console.log(student); //does not work, can't access a block variable outside the block
                     
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+    document.getElementById(codeValue).style.color = 'red';
+})
+                
