@@ -1,0 +1,80 @@
+header,
+footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+nav{
+text-align: center;
+}
+nav a {
+    padding: 20px;
+    color: white;
+    display: none; 
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+nav b {
+    padding: 20px;
+    color: white; 
+}
+nav b:hover {
+    text-decoration: none;
+    color: #616061;
+}
+main{
+    display: grid;
+    max-width: 1050px; 
+    margin: 20px auto; 
+}
+h1 {
+    text-align: center;
+}
+section {
+  padding: 50px;
+  background-color: white;
+  margin: 1em;
+  grid-template-columns: 1fr;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+    
+    section{
+        grid-template-columns: 1fr 1fr;
+    }
+    nav a {
+    padding: 20px;
+    color: white;
+    display: inline-block;
+    }
+    nav b {
+    padding: 20px;
+    color: white;
+    display: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav a {
+    padding: 20px;
+    color: white;
+    display: inline-block;
+    }
+    nav b {
+    padding: 20px;
+    color: white;
+    display: none;
+    }
+}
+
