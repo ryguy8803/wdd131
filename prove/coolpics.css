@@ -51,16 +51,6 @@ img {
     section{
         grid-template-columns: 1fr 1fr;
     }
-    nav a {
-    padding: 20px;
-    color: white;
-    display: inline-block;
-    }
-    nav b {
-    padding: 20px;
-    color: white;
-    display: none;
-    }
 }
 @media screen and (min-width: 1000px) {
     section{
