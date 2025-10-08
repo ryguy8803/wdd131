@@ -82,7 +82,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .hide{
-    display: inline;
+    display: block;
 }
 }
 @media screen and (min-width: 1000px) {
