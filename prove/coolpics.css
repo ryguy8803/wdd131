@@ -21,11 +21,20 @@ nav a:hover {
 }
 nav b {
     padding: 20px;
-    color: white; 
+    color: white;
+    display: block;
 }
 nav b:hover {
     text-decoration: none;
     color: #616061;
+}
+
+nav.show-menu a {
+display: block; 
+border-top: 1px solid rgba(255, 255, 255, 0.2); 
+}
+nav b.change {
+background-color: rgba(0, 0, 0, 0.3);
 }
 main{
     display: grid;
@@ -46,6 +55,31 @@ img {
   height: 300px;
   object-fit: cover;
 }
+dialog img {
+    max-width: 90%; 
+    max-height: 90vh;
+    width: auto; 
+    height: auto; 
+    display: block;
+    margin: 5vh auto;
+    object-fit: contain;
+    
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: white;
+}
+
 @media screen and (min-width: 700px) {
     
     section{
