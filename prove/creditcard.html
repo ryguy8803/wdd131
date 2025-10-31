@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="creditcard.css">
+    <script src="creditcard.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+    <div class="credit-card-base credit-card-front">
+    <div id="displayTotal">TOTAL: $199</div>
+    <div id="cardBrandLogo">
+        💳
+    </div>
+        <label class="card-label total-label">CARD NUMBER</label>
+        <input type="text" id="inputCardNumber" class="card-input card-number-input" 
+                maxlength="19" required 
+                > <p id="cardNumFeedback" class="feedback-text error hidden">Invalid card number. Must be '1234123412341234'.</p>
+        <label for="inputCardName" class="card-label card-holder-label">CARD HOLDER</label>
+        <input type="text" id="inputCardName" class="card-input card-holder-input" 
+                required> <label id="expirationDateLabel" class="card-label expiration-label">EXPIRATION</label>
+        <div class="expiration-inputs">
+            <input type='text' id='month' name="expMonth" class="card-input exp-input" 
+                    maxlength="2" inputmode="numeric" required 
+                    aria-labelledby="expirationDateLabel"> <input type='text' id='year' name="expYear" class="card-input exp-input" 
+                    maxlength="2" inputmode="numeric" required 
+                    aria-labelledby="expirationDateLabel"> </div>
+        <p id="expFeedback" class="feedback-text error hidden">Card is expired or invalid date.</p>
+        </div>
+        <div class="credit-card-base credit-card-back">
+            <div class="magnetic-stripe"></div>
+            <div class="cvc-section">
+                <label for="inputCVV" class="cvc-label">CVC/CVV</label>
+                <input type='text' id='inputCVV' class="card-input cvc-input" 
+                    maxlength="4" inputmode="numeric" required> </div>
+        </div>
+        <button type="submit" id="submitButton" class="submit-button">Submit</button>
+        <div id="messageBox" class="modal-backdrop hidden">
+            <div id="messageContent" class="modal-content">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
