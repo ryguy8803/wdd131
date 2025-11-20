@@ -357,10 +357,8 @@ function searchHandler(event) {
     });
 
     filteredRecipes.sort((a, b) => a.name.localeCompare(b.name));
-
     renderRecipes(filteredRecipes);
 }
-
 
 searchBtn.addEventListener('click', searchHandler);
 
@@ -370,5 +368,10 @@ searchInput.addEventListener('keydown', function(element) {
     }
 });
 
+function init() {
+    const randomNum = Math.floor(Math.random() * recipes.length);
+    const randomRecipe = recipes[randomNum];
+    renderRecipes([randomRecipe]);
+}
 
 init();
