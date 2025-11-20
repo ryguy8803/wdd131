@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="recipes.css">
+    <script defer src="recipes.js"></script>
+
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Apple Crisp Recipe | The Recipe Book">
@@ -34,14 +36,14 @@
             <h1>The Recipe Book</h1>
         </div>
         <div class="search-area">
-            <input type="search" placeholder="Search Recipes..." aria-label="Search Recipes">
-            <button type="submit" aria-label="Search">
-                <img src="images/search.svg" alt="Search icon">
+            <input type="search" id="search-input" placeholder="Search Recipes..." aria-label="Search Recipes">
+            <button type="submit" id="search-btn" aria-label="Search">
+            <img src="images/search.svg" alt="Search icon">
             </button>
         </div>
     </header>
 
-    <main class="recipe-layout">
+    <main class="recipe-layout" id="recipe-container">
         <div class="recipe-card">
             <section class="recipe-details">
               <div class="recipe-category">Dessert</div>
