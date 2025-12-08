@@ -197,7 +197,7 @@ p {
 header > h1, header > h2 {
     color: white;
 }
-/* for fun had added this for phones and tablets */
+/*  for phones and tablets */
 @media screen and (max-width: 768px) {
     header {
         grid-template-columns: 1fr;

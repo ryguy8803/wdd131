@@ -82,7 +82,6 @@ function searchHandler(event) {
     renderProjects(filteredProjects);
 }
 
-
 searchBtn.addEventListener('click', searchHandler);
 searchInput.addEventListener('keydown', function(element) {
     if (element.key === 'Enter') {
